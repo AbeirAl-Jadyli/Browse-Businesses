@@ -1,0 +1,55 @@
+:root{
+    --main-color:#212832;
+}
+
+.form-control {
+    display: inline;
+    width: 40%;
+}
+
+.header {
+    padding-block: 8rem;
+    position: relative;
+    color: white;
+}
+
+.header::before {
+    content: "";
+    background-color: var(--main-color);
+    position: absolute;
+    inset-inline: 0;
+    inset-block-start: -5rem;
+    inset-block-end: -3rem;
+    transform: skewY(-4deg);
+}
+
+/* card */
+.browse-businesses{
+padding-block-start: 8rem;
+}
+.card{
+    flex-grow: 1;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(33, 40, 50, 0.15);
+}
+.row .card:hover{
+    box-shadow: 0px 0px 18px 6px rgba(0,0,0,0.66);
+    transition: all .3s;
+}
+
+/* footer */
+footer {
+    padding-block: 8rem;
+    position: relative;
+    color: white;
+    background-color: var(--main-color);
+    margin-top: 10rem;
+}
+footer::after {
+    content: "";
+    background-color: var(--main-color);
+    position: absolute;
+    inset-inline: 0;
+    inset-block-start: -4rem;
+    transform: skewY(-4deg);
+    height: 8rem;
+}
